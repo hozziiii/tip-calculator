@@ -1,0 +1,126 @@
+@font-face {
+    font-family: space mono;
+    src: url(/public/fonts/SpaceMono-Regular.ttf);
+    font-weight: 700;
+}
+
+body {
+    font-family: space mono;
+    font-weight: 700;
+}
+
+
+body {
+    background-color: hsl(185, 41%, 84%);
+}
+
+.splitter {
+    color: hsl(186, 14%, 43%);
+}
+
+.calculator-component {
+    background-color: white;
+    border-radius: 10px;
+}
+
+.tip-percent {
+    margin-top: 1rem;
+    color: white;
+    background-color: hsl(183, 100%, 15%);
+    border: none;
+    border-radius: 5px;
+    padding: 0.55rem;
+    border: 2px solid transparent;
+}
+
+.custom-tip {
+    background-color: hsl(189, 41%, 97%);
+    color: hsl(183, 100%, 15%);
+    font-weight: bold;
+}
+
+.custom-tip::placeholder {
+    text-align: center;
+    color: hsl(183, 100%, 15%);
+    letter-spacing: 0.1rem;
+}
+
+input[type=text] {
+    border-radius: 5px;
+    border: none;
+    background-color: hsl(189, 41%, 97%);
+    padding: 0.55rem;
+    color: hsl(183, 100%, 15%);
+    font-weight: bolder;
+    border: 2px solid transparent;
+}
+
+.input-logo {
+    position: absolute;
+    top: 40px;
+    left: 20px;
+}
+
+.tip-percent:hover {
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.tip-percent:has(.percentage:checked) {
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+    font-weight: bolder;
+}
+
+.display-amount {
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 10px;
+}
+
+.results .amounts {
+    color: white;
+}
+
+.results .per-person {
+    color: hsl(172, 67%, 45%);
+    font-size: 0.875rem;
+}
+
+.money {
+    font-size: 2.25rem;
+    color: hsl(172, 67%, 45%);
+    font-weight: bold;
+}
+
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 100vh;
+}
+
+.reset-btn {
+    background-color: hsl(184, 33%, 41%);
+    border-radius: 5px;
+    height: 40px;
+    border: none;
+    font-weight: bold;
+    color: hsl(183, 100%, 15%);
+}
+
+.reset-btn:hover {
+    background-color: hsl(172, 67%, 45%);
+}
+
+.error-handler {
+    right: 0;
+    color: red;
+}
+
+.error-box {
+    border: 2px solid red;
+}
